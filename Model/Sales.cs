@@ -20,15 +20,9 @@ namespace PKSoftware.Model
         /// </summary>
         public string Name { get; set; }
         /// <summary>
-        /// Foreign key referencing the Product to which the Sales belongs 
+        /// ProductId of the Sales 
         /// </summary>
         public Guid ProductId { get; set; }
-
-        /// <summary>
-        /// Navigation property representing the associated Product
-        /// </summary>
-        [ForeignKey("ProductId")]
-        public Product? Product { get; set; }
         /// <summary>
         /// CustomerId of the Sales 
         /// </summary>
